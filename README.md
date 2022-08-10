@@ -1,2 +1,2 @@
-# SecretWord
+# Estudos-React
 Created with CodeSandbox
