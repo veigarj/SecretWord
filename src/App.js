@@ -24,8 +24,8 @@ export default function App() {
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen />}
-      {gameStage === "game" && <StartScreen />}
-      {gameStage === "end" && <StartScreen />}
+      {gameStage === "game" && <Game />}
+      {gameStage === "end" && <GameOver />}
     </div>
   );
 }
