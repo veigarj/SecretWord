@@ -8,7 +8,9 @@ import { useCallback, useState, useEffect } from "react";
 import { wordsList } from "./data/words";
 
 // Components
-import StartScreen from "./component/StartScreen";
+import StartScreen from "./components/StartScreen";
+import Game from "./components/Game";
+import GameOver from "./components/GameOver";
 
 const stages = [
   { id: 1, name: "start" },
@@ -23,7 +25,7 @@ export default function App() {
     <div className="App">
       {gameStage === "start" && <StartScreen />}
       {gameStage === "game" && <StartScreen />}
-      <StartScreen />
+      {gameStage === "end" && <StartScreen />}
     </div>
   );
 }
