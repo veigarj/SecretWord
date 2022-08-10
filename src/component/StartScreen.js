@@ -1,10 +1,11 @@
-import "./startScreen.css";
+import "./StartScreen.css";
 
-const startScreen = () => {
+const StartScreen = () => {
   return (
     <div>
       <h1>Secret Word</h1>
-      <p></p>
+      <p>Clique no botao abaixo para começar a jogar</p>
+      <button>começar o jogo</button>
     </div>
   );
 };
