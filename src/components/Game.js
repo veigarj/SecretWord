@@ -1,4 +1,4 @@
-class Game = () => {
+const Game = () => {
 
         return (
             <div>
