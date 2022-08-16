@@ -1,10 +1,9 @@
 const Game = () => {
-
-        return (
-            <div>
-                
-            </div>
-        );
-}
+  return (
+    <div>
+      <h1>Game 1</h1>
+    </div>
+  );
+};
 
 export default Game;
