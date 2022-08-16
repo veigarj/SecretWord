@@ -26,10 +26,15 @@ export default function App() {
     setGameStage(stages[1].name);
   };
 
+  // process the latter input
+  const verifyLatter = () => {
+    setGameStage(stages[2].name);
+  };
+
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
-      {gameStage === "game" && <Game />}
+      {gameStage === "game" && <Game verifyLatter={verifyLatter} />}
       {gameStage === "end" && <GameOver />}
     </div>
   );

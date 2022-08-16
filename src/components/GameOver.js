@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
 const GameOver = () => {
-  return <div></div>;
+  return <div>Game Over</div>;
 };
 export default GameOver;
