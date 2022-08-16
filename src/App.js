@@ -22,6 +22,7 @@ export default function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
   const [words] = useState(wordsList);
 
+  // Start the Secret Words
   const startGame = () => {
     setGameStage(stages[1].name);
   };
@@ -31,11 +32,16 @@ export default function App() {
     setGameStage(stages[2].name);
   };
 
+  // restarts the Game
+  const retry = () => {
+    setGameStage(stages[0].name);
+  };
+
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && <Game verifyLatter={verifyLatter} />}
-      {gameStage === "end" && <GameOver />}
+      {gameStage === "end" && <GameOver retry={retry} />}
     </div>
   );
 }
